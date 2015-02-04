@@ -1,0 +1,16 @@
+
+<?php
+
+$response = new \Phalcon\Http\Response();
+$response->setStatusCode(404, 'Not Found');
+$response->setContent('<div class="proreverse_jumbotron">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <img class="img-responsive" src="http://upload.wikimedia.org/wikipedia/commons/a/af/Notfound.png" alt="mystery-agent-placeholder"/>
+        </div>
+
+    </div>
+</div>
+</div>');
+$response->send();
+?>
